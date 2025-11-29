@@ -1,4 +1,4 @@
-# ChromaChameleon 🌈
+# Profile 
 
 A modern, interactive website featuring **iOS 26-inspired liquid glass design** with **animated gradient backgrounds, glass cards, and shimmering headers & footers**. Fully responsive and lightweight.
 
