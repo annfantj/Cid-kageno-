@@ -1,0 +1,20 @@
+/* Cursor-follow shimmer overlay */
+.glass, .glass-thin, .glass-thick,
+nav, footer {
+    position: relative;
+    overflow: hidden;
+}
+
+.glass::before, .glass-thin::before, .glass-thick::before,
+nav::before, footer::before {
+    content: '';
+    position: absolute;
+    top:0; left:0; width:200%; height:200%;
+    border-radius: inherit;
+    background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.2), rgba(255,255,255,0) 70%);
+    transform: translate(-50%, -50%) scale(0);
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index:2;
+    opacity:0;
+}
